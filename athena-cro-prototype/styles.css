@@ -88,11 +88,20 @@ input { font: inherit; }
 .logins .link-arrow { color: var(--white); }
 .nav-bar-wrap { width: calc(100% - 112px); padding-top: 20px; }
 .nav--v3 .nav-bar-wrap { width: calc(100% - 128px); }
+/* Figma "Glass" effect (radius 100, refraction .55, depth 43, light -45°): approximated with a strong
+   backdrop blur, a light rim that's brightest top-left, and a faint inner shade bottom-right. */
 .nav-bar {
   position: relative; width: 100%; display: flex; align-items: center; justify-content: space-between;
   padding: 8px; border-radius: 32px; background: rgba(247,245,251,.5);
+  -webkit-backdrop-filter: blur(28px) saturate(1.35); backdrop-filter: blur(28px) saturate(1.35);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.55), inset 1.5px 1.5px 0 rgba(255,255,255,.65),
+              inset -1px -1.5px 1px rgba(78,45,130,.10), 0 1px 0 rgba(255,255,255,.25);
 }
-.nav--v3 .nav-bar { background: rgba(247,245,251,.16); }
+.nav--v3 .nav-bar {
+  background: rgba(247,245,251,.16);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.30), inset 1.5px 1.5px 0 rgba(255,255,255,.45),
+              inset -1px -1.5px 1px rgba(28,18,73,.18);
+}
 .nav-links { display: flex; align-items: center; gap: 4px; height: 32px; }
 .nav-link {
   display: flex; align-items: center; gap: 8px; height: 38px; padding: 8px 16px; border-radius: 32px;
@@ -109,6 +118,7 @@ input { font: inherit; }
 .search-pill {
   display: flex; align-items: center; gap: 8px; height: 40px; padding: 10px 16px; border-radius: 96px;
   background: rgba(255,255,255,.5); border: .5px solid var(--purple-int-30);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   color: var(--purple-int-100); font-size: 16px; font-weight: 600; line-height: 1.4;
 }
 .nav-cta .btn-primary { height: 40px; min-width: 0; }
