@@ -27,7 +27,8 @@ body { overflow-x: hidden; }
   .nav-link { height: 44px; }
 
   .hero--v2 .logins .link-arrow { color: var(--purple-int-100); }
-  .hero--v2 .blob { top: auto; bottom: -560px; left: -30%; width: 160%; height: 1059px; }
+  /* Blob: same proportions as desktop, anchored to the hero bottom; height follows width via aspect-ratio */
+  .hero--v2 .blob { top: auto; bottom: -51vw; left: -0.903%; width: 102.163%; z-index: 1; }
 
   /* Hero V2 → flow layout: copy, ask + CTA row, photo band at the bottom */
   .hero--v2 { height: auto; display: flex; flex-direction: column; gap: 32px; padding: 168px 40px 0; }
@@ -48,7 +49,7 @@ body { overflow-x: hidden; }
   .hero--v3 h1 { font-size: 52px; }
   .hero--v3 h1 .wave { font-size: 38px; }
   .hero--v3 .ask { position: relative; inset: auto; z-index: 2; width: 100%; max-width: 642px; }
-  .hero--v3 .blob { top: auto; bottom: -420px; left: 10%; }
+  .hero--v3 .blob { top: auto; bottom: -50vw; left: 9.931%; width: 85.322%; }
   .panel { position: relative; left: auto; right: auto; top: auto; width: 100%; height: auto; padding: 32px; display: flex; flex-direction: column; gap: 24px; }
   .panel-title { position: static; }
   .panel-cards { position: static; width: 100%; }
@@ -110,7 +111,7 @@ body { overflow-x: hidden; }
   .hero--v2 .ask-send { height: 44px; min-width: 44px; padding: 0 18px; }
   .hero--v2 .hero-cta { width: 100%; }
   .hero--v2 .hero-img { width: calc(100% + 40px); margin: 16px -20px 0; height: 320px; }
-  .hero--v2 .blob { left: -60%; width: 220%; }
+  .hero--v2 .blob { left: -30%; width: 160%; bottom: -84vw; }
   .hero-copy h1 { font-size: 40px; }
   .hero-copy .sub { font-size: 17px; }
   .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -20px; padding: 0 20px; }
@@ -119,14 +120,13 @@ body { overflow-x: hidden; }
   .ask input { font-size: 15px; }
 
   /* Hero V3 */
-  .hero--v3 { padding: 128px 20px 48px; gap: 24px; min-height: 0; }
+  .hero--v3 { padding: 128px 20px 48px; gap: 24px; min-height: 100vh; }
   .hero--v3 h1 { font-size: 40px; }
   .hero--v3 h1 .wave { font-size: 30px; }
   .hero--v3 h1 .sp { font-size: 36px; }
   .hero--v3 .ask { height: 56px; padding: 6px 6px 6px 16px; }
   .hero--v3 .ask-send { height: 44px; width: 60px; padding: 0; }
-  .hero--v3 .blob { bottom: -560px; left: -40%; width: 1000px; height: 1000px; }
-  .hero--v3 .blob-rot { width: 732px; height: 732px; }
+  .hero--v3 .blob { bottom: -78vw; left: -15%; width: 130%; }
   .panel { padding: 20px; border-radius: 24px; }
   .pcard { flex-direction: column; align-items: stretch; gap: 12px; }
   .pcard-img { width: 100%; height: 160px; }
