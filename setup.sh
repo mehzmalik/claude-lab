@@ -11,5 +11,10 @@ if [ -n "${GITHUB_TOKEN:-}" ]; then
   printf 'protocol=https\nhost=github.com\nusername=%s\npassword=%s\n' "$GITHUB_USER" "$GITHUB_TOKEN" | git credential-osxkeychain store
   echo "Token stored in macOS Keychain."
 fi
+if [ -n "${GATE_PASSWORD:-}" ]; then
+  HASH=$(printf 'claude-lab::%s' "$GATE_PASSWORD" | shasum -a 256 | cut -d' ' -f1)
+  sed -i '' -E "s/var DEFAULT_HASH = '[^']*'/var DEFAULT_HASH = '$HASH'/" gate.js
+  echo "Gate password hash written to gate.js."
+fi
 echo "Git identity: $(git config user.name) <$(git config user.email)>"
 echo "Remote:       $(git remote get-url origin)"

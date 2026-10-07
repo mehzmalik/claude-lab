@@ -13,7 +13,7 @@
  */
 (function () {
   var SALT = 'claude-lab::';
-  var DEFAULT_HASH = '18c4825efeda1e9ee4985b717a698a89b3d2a733d765ca2dfa792119abd58087'; // athena-cro-2026
+  var DEFAULT_HASH = '20bb084fc6fa3ecef8d0fc7f2edb852de063089bc9cf8ebeb0cf4ccaa9b8a174'; // set by setup.sh from GATE_PASSWORD in .env
   var me = document.currentScript;
   var HASH = (me && me.getAttribute('data-hash')) || DEFAULT_HASH;
   var KEY = 'claude-lab-unlocked:' + HASH;
