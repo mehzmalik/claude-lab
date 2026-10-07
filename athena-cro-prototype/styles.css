@@ -147,7 +147,7 @@ input { font: inherit; }
    CSS blur() takes a sigma ≈ radius / 2, applied to the composited group so colours blend into pastels. */
 .blob-inner { position: absolute; isolation: isolate; }
 .hero--v2 .blob-inner { filter: blur(6.25vw); }   /* 90px at 1440 */
-.hero--v3 .blob-inner { filter: blur(8.333vw); }  /* 120px at 1440 */
+.hero--v3 .blob-inner { filter: blur(8.333vw) saturate(1.15); }  /* 120px at 1440; +15% sat measured against Figma render */
 .mesh.overlay { mix-blend-mode: overlay; }
 .mesh.hardlight { mix-blend-mode: hard-light; }
 .mesh { position: absolute; inset: 0; }
