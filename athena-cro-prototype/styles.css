@@ -143,7 +143,11 @@ input { font: inherit; }
 
 /* Mesh-gradient blob ("Ellipse 54") */
 .blob { position: absolute; pointer-events: none; }
+/* Figma: both mesh fills are clipped to the ellipse, then the whole node gets LAYER_BLUR (radius 180 / 240).
+   CSS blur() takes a sigma ≈ radius / 2, applied to the composited group so colours blend into pastels. */
 .blob-inner { position: absolute; isolation: isolate; }
+.hero--v2 .blob-inner { filter: blur(90px); }
+.hero--v3 .blob-inner { filter: blur(120px); }
 .mesh.overlay { mix-blend-mode: overlay; }
 .mesh.hardlight { mix-blend-mode: hard-light; }
 .mesh { position: absolute; inset: 0; }
@@ -151,11 +155,11 @@ input { font: inherit; }
 
 /* V2: 1471.146 × 1059.452 at (-13, 636), rotated 180°, blur padding -16.99% / -12.24% */
 .hero--v2 .blob { left: -13px; top: 636px; width: 1471.146px; height: 1059.452px; transform: rotate(180deg); }
-.hero--v2 .blob-inner { inset: -37.755% -27.190%; }
+.hero--v2 .blob-inner { inset: 0; }
 /* V3: 1228.634 box at (143, 453); inner 899.423 square rotated 30°, padding -26.68% */
 .hero--v3 .blob { left: 143px; top: 453px; width: 1228.634px; height: 1228.634px; display: flex; align-items: center; justify-content: center; }
 .hero--v3 .blob-rot { position: relative; width: 899.423px; height: 899.423px; transform: rotate(30deg); flex: none; }
-.hero--v3 .blob-inner { inset: -51.144%; }
+.hero--v3 .blob-inner { inset: 0; }
 
 /* Hero copy */
 .hero-copy { position: absolute; left: 56px; top: 340px; width: 539px; display: flex; flex-direction: column; gap: 32px; }
