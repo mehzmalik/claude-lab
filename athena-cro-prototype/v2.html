@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>athenahealth — Option 3 · Conversational experience · V2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="responsive.css">
+<script type="module" src="mesh-gradient.js"></script>
+<script type="module" src="prototype.js"></script>
+</head>
+<body>
+<div class="page" data-figma-node="740:11235">
+
+  <!-- ============ HERO (740:11236 "V2- General") ============ -->
+  <section class="hero hero--v2">
+    <div class="hero-img" data-figma-node="740:11237">
+      <img src="assets/hero-img.png" alt="">
+    </div>
+
+    <header class="nav" data-figma-node="740:11238">
+      <div class="nav-utility">
+        <a class="logo" href="#" aria-label="athenahealth">
+          <span class="wordmark"><img src="assets/wordmark.svg" alt=""></span>
+          <span class="leaf"><img src="assets/leaf.svg" alt=""></span>
+        </a>
+        <div class="logins">
+          <a class="link-arrow" href="#">Patient Login <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 5.5l5.5 5.5 5.5-5.5"/></svg></span></a>
+          <a class="link-arrow" href="#">athenaOne Login</a>
+        </div>
+      </div>
+      <div class="nav-bar-wrap">
+        <nav class="nav-bar">
+          <div class="nav-links" id="nav-links">
+            <a class="nav-link" href="#">Solutions</a>
+            <a class="nav-link" href="#">Who We Serve</a>
+            <a class="nav-link" href="#">Why Choose Us</a>
+            <a class="nav-link" href="#">Resources</a>
+            <a class="nav-link" href="#">athenaInstitute</a>
+            <a class="nav-link" href="#">About Us</a>
+          </div>
+          <button class="nav-menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path class="bars-ic" d="M3 5h14M3 10h14M3 15h14"/><path class="x-ic" d="M5 5l10 10M15 5L5 15" style="display:none"/></svg></button>
+            <div class="nav-cta">
+            <button class="search-pill" type="button" aria-label="Search"><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg></span><span class="search-label">Search</span></button>
+            <a class="btn-primary" href="#">Request a Demo</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mesh-gradient blob: Ellipse 54 (740:11274) -->
+    <div class="blob" data-figma-node="740:11274">
+      <div class="blob-inner">
+        <div class="mesh" data-mesh="A" data-mask="assets/ellipse54-v2.svg" style="opacity:.9"></div>
+        <div class="mesh overlay" data-mesh="B" data-mask="assets/ellipse54-v2.svg"></div>
+        <img class="blob-shape" src="assets/ellipse54-v2.svg" alt="">
+      </div>
+    </div>
+
+    <form class="ask" data-figma-node="740:11275" autocomplete="off">
+      <div class="ask-left">
+        <span class="ic"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M6 1l1.4 3.6L11 6 7.4 7.4 6 11 4.6 7.4 1 6l3.6-1.4L6 1z"/><path d="M12 8l.9 2.1L15 11l-2.1.9L12 14l-.9-2.1L9 11l2.1-.9L12 8z"/><path d="M12 1l.6 1.4L14 3l-1.4.6L12 5l-.6-1.4L10 3l1.4-.6L12 1z"/></svg></span>
+        <input type="text" name="q" aria-label="Ask a question" placeholder='Ask a question, like "How does athenaOne pricing work?"...'>
+      </div>
+      <button class="ask-send" type="submit" aria-label="Send"><span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14V2M3 7l5-5 5 5"/></svg></span></button>
+    </form>
+
+    <div class="hero-copy" data-figma-node="740:11283">
+      <div class="text">
+        <h1>How can we help you cure complexity?</h1>
+        <p class="sub">Patient, provider, or just exploring, type your question
+and we'll point you the right way.</p>
+      </div>
+      <div class="chips">
+        <button class="chip" type="button">Pay a Bill</button>
+        <button class="chip" type="button">Explore Healthcare Solutions</button>
+        <button class="chip" type="button">Legacy On-Premise EHR</button>
+      </div>
+    </div>
+
+    <a class="btn-primary hero-cta" href="#" data-figma-node="740:11291">Schedule a Product Demo</a>
+  </section>
+
+  <!-- ============ SOLUTIONS (740:11292) ============ -->
+  <section class="sec-solutions" data-figma-node="740:11292">
+    <div class="sol-top">
+      <div class="sol-copy">
+        <div class="text">
+          <p class="kicker">Solutions</p>
+          <h2 class="h2">Lorem ipsum headline for athenahealth</h2>
+          <p class="body-18">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vita.</p>
+        </div>
+        <a class="btn-outline" href="#"><span>Get started today</span></a>
+      </div>
+      <div class="sol-stats">
+        <div class="stat-card">
+          <div class="inner">
+            <p class="stat-num">170,000+</p>
+            <p class="stat-cap">Providers trust athenahealth to run their practices efficiently</p>
+          </div>
+        </div>
+        <div class="photo-card" data-figma-node="740:11308">
+          <img src="assets/stat-photo.png" alt="">
+          <div class="mesh" data-mesh="B256"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group" data-figma-node="740:11312">
+      <article class="card">
+        <div class="card-visual"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><circle cx="16" cy="16" r="14"/><path d="M16 16l6-8"/><circle cx="16" cy="16" r="1.5"/><path d="M7 20h.01M9 12h.01M16 8h.01M25 20h.01"/></svg></div>
+        <div class="card-text">
+          <h3 class="card-title">athenaOne</h3>
+          <p class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et </p>
+        </div>
+        <a class="btn-outline" href="#"><span>Lorum Ipsum</span></a>
+      </article>
+      <article class="card">
+        <div class="card-visual"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><circle cx="16" cy="16" r="14"/><path d="M16 16l6-8"/><circle cx="16" cy="16" r="1.5"/><path d="M7 20h.01M9 12h.01M16 8h.01M25 20h.01"/></svg></div>
+        <div class="card-text">
+          <h3 class="card-title">athenaPayer</h3>
+          <p class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et </p>
+        </div>
+        <a class="btn-outline" href="#"><span>Lorum Ipsum</span></a>
+      </article>
+      <article class="card">
+        <div class="card-visual"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><circle cx="16" cy="16" r="14"/><path d="M16 16l6-8"/><circle cx="16" cy="16" r="1.5"/><path d="M7 20h.01M9 12h.01M16 8h.01M25 20h.01"/></svg></div>
+        <div class="card-text">
+          <h3 class="card-title">EHR</h3>
+          <p class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et </p>
+        </div>
+        <a class="btn-outline" href="#"><span>Lorum Ipsum</span></a>
+      </article>
+      <article class="card">
+        <div class="card-visual"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><circle cx="16" cy="16" r="14"/><path d="M16 16l6-8"/><circle cx="16" cy="16" r="1.5"/><path d="M7 20h.01M9 12h.01M16 8h.01M25 20h.01"/></svg></div>
+        <div class="card-text">
+          <h3 class="card-title">athenaOne</h3>
+          <p class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et </p>
+        </div>
+        <a class="btn-outline" href="#"><span>Lorum Ipsum</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL (740:11369) ============ -->
+  <section class="sec-quote" data-figma-node="740:11369">
+    <div class="quote-col">
+      <div class="quote-mark"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4c-2.5 0-4.5 2-4.5 4.5v6.5c0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5V8.5C13.5 6 11.5 4 9 4zM23 4c-2.5 0-4.5 2-4.5 4.5v6.5c0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5V8.5C27.5 6 25.5 4 23 4z"/></svg></div>
+      <p class="quote-text">My response to a colleague, which was honest and true, was that athenaOne was the best EMR that I had ever used in my 22 years of practice.</p>
+    </div>
+    <div class="quote-photo" data-figma-node="740:11387"><img src="assets/testimonial-photo.png" alt=""></div>
+    <div class="quote-by">Paul Perryman, M.D.
+FNP, Owner, Arbor Medical Partners
+Nephrology </div>
+  </section>
+
+  <!-- ============ PROVEN RESULTS (740:11392) ============ -->
+  <section class="sec-results" data-figma-node="740:11392">
+    <h2 class="h2">Proven results for real practices</h2>
+    <div class="results-wrap">
+      <div class="results-top">
+        <div class="rq">
+          <p class="rq-text">"athenahealth transformed how we manage our practice. We went from chasing claims to watching revenue flow in."</p>
+          <div class="rq-author">
+            <div class="avatar">
+              <img class="ph" src="assets/testimonial-photo.png" alt="">
+              <img class="ov" src="assets/avatar-overlay.png" alt="">
+            </div>
+            <p class="rq-name">Dr. Sarah Chen<br>Midwest Family Practice</p>
+          </div>
+          <a class="link-arrow" href="#">Read the customer story <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+        </div>
+        <div class="rchart">
+          <div class="bars" aria-hidden="true">
+            <div class="bar" style="height:137.059px;opacity:.05"></div>
+            <div class="bar" style="height:137.059px;opacity:.10"></div>
+            <div class="bar" style="height:171.006px;opacity:.20"></div>
+            <div class="bar" style="height:171.006px;opacity:.25"></div>
+            <div class="bar" style="height:137.059px;opacity:.30"></div>
+            <div class="bar" style="height:137.059px;opacity:.40"></div>
+            <div class="bar" style="height:194.476px;opacity:.50"></div>
+            <div class="bar" style="height:160.211px;opacity:.60"></div>
+            <div class="bar" style="height:184.289px;opacity:.70"></div>
+            <div class="bar" style="height:174.301px;opacity:.80"></div>
+            <div class="bar" style="height:185.098px;opacity:.90"></div>
+            <div class="bar solid" style="height:255.333px"></div>
+          </div>
+          <div class="rstats">
+            <div class="rstat" style="width:204px"><p class="rstat-num">+37% Revenue</p><p class="rstat-cap">Year-over-year increase achieved within 12 months post-integration.</p></div>
+            <div class="rstat" style="width:111px"><p class="rstat-num">12 hrs</p><p class="rstat-cap">Saved per week</p></div>
+            <div class="rstat"><p class="rstat-num">18% fewer</p><p class="rstat-cap">Claim denials</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr" role="presentation"></div>
+
+      <div class="results-bottom">
+        <div class="rcol">
+          <div class="dots" id="dots" aria-hidden="true"></div>
+          <p class="pct-100"><span class="big">100</span><span class="mid">% Onboarded</span></p>
+          <p class="rcol-quote">"Onboarded thirty physicians without downtime."</p>
+          <a class="link-arrow" href="#">Read the customer story <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+        </div>
+        <div class="vr" role="presentation"></div>
+        <div class="rcol center">
+          <div class="ring" aria-label="40% reduction">
+            <div class="arc"><img src="assets/ellipse229.svg" alt=""></div>
+            <img class="track" src="assets/ellipse230.svg" alt="">
+            <p class="val"><span class="n">40 </span><span class="p">%</span></p>
+            <p class="minus">-</p>
+          </div>
+          <p class="rcol-quote">"Documentation time fell by nearly half."</p>
+          <a class="link-arrow" href="#">Read the customer story <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+        </div>
+        <div class="vr" role="presentation"></div>
+        <div class="rcol">
+          <div class="rdelta">
+            <div class="rdelta-stack">
+              <p class="pct"><span class="n32">36 </span><span class="n24">%</span></p>
+              <span class="arrow-dn"><svg viewBox="0 0 34 50" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 4v42M4 33l13 13 13-13"/></svg></span>
+              <p class="pct"><span class="n32">14 </span><span class="n24">%</span></p>
+            </div>
+            <div class="rdelta-line"></div>
+            <div class="rdelta-row">
+              <p class="pct"><span class="n56">22 </span><span class="n40">%</span></p>
+              <span class="arrow-dn"><svg viewBox="0 0 34 50" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 4v42M4 33l13 13 13-13"/></svg></span>
+            </div>
+          </div>
+          <p class="rcol-quote">"Reduced our denials by 22% in 90 days."</p>
+          <a class="link-arrow" href="#">Read the customer story <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREFOOTER (740:11562) ============ -->
+  <section class="sec-prefooter" data-figma-node="740:11562">
+    <div class="pre-head">
+      <h2 class="h2">Not sure where to start?</h2>
+      <a class="btn-outline" href="#"><span>Get started today</span></a>
+    </div>
+    <div class="pre-links">
+      <a class="pre-link" href="#">Explore athenaOne <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+      <div class="pre-sep"></div>
+      <a class="pre-link" href="#">Find the right solution for your practice <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+      <div class="pre-sep"></div>
+      <a class="pre-link" href="#">See how practices succeed with athenahealth <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (740:11578) ============ -->
+  <footer class="footer" data-figma-node="740:11578">
+    <div class="footer-logo" data-figma-node="740:11579">
+      <div class="fl-layer" style="--b:0px;--m0:0%;--m1:0%;--m2:58%;--m3:68%">
+        <img src="assets/footer-logo.svg" alt="">
+        <div class="mesh hardlight" data-mesh="B" data-mask="assets/footer-logo.svg" style="opacity:.5"></div>
+      </div>
+      <div class="fl-layer" style="--b:1.5px;--m0:58%;--m1:68%;--m2:74%;--m3:82%">
+        <img src="assets/footer-logo.svg" alt="">
+        <div class="mesh hardlight" data-mesh="B" data-mask="assets/footer-logo.svg" style="opacity:.5"></div>
+      </div>
+      <div class="fl-layer" style="--b:3px;--m0:74%;--m1:82%;--m2:88%;--m3:94%">
+        <img src="assets/footer-logo.svg" alt="">
+        <div class="mesh hardlight" data-mesh="B" data-mask="assets/footer-logo.svg" style="opacity:.5"></div>
+      </div>
+      <div class="fl-layer" style="--b:5px;--m0:88%;--m1:94%;--m2:100%;--m3:100%">
+        <img src="assets/footer-logo.svg" alt="">
+        <div class="mesh hardlight" data-mesh="B" data-mask="assets/footer-logo.svg" style="opacity:.5"></div>
+      </div>
+    </div>
+    <div class="legal">
+      <a href="#">Privacy Policy</a><span class="dot">·</span>
+      <a href="#">Terms of Use</a><span class="dot">·</span>
+      <a href="#">Disclaimers</a><span class="dot">·</span>
+      <a href="#">Do Not Sell My Information</a><span class="dot">·</span>
+      <a href="#"> Code of Conduct</a><span class="dot">·</span>
+      <a href="#">Transparency in Coverage</a><span class="dot">·</span>
+      <a href="#">Cookie Preferences</a><span class="dot">·</span>
+      <a href="tel:8009815084"> Call us anytime 800-981-5084</a><span class="dot">·</span>
+      <a class="social" href="#" aria-label="Facebook"><img src="assets/social-1.svg" alt=""></a><span class="dot">·</span>
+      <a class="social" href="#" aria-label="X"><img class="x" src="assets/social-x.svg" alt=""></a><span class="dot">·</span>
+      <a class="social" href="#" aria-label="LinkedIn"><img src="assets/social-3.svg" alt=""></a><span class="dot">·</span>
+      <a class="social" href="#" aria-label="YouTube"><img src="assets/social-4.svg" alt=""></a>
+    </div>
+  </footer>
+</div>
+
+<nav class="switcher" aria-label="Prototype variants">
+  <a href="v2.html" aria-current="page">V2 · Full page</a>
+  <a href="v3.html">V3 · Hero</a>
+  <a href="v3-panel.html">V3 · Hero + panel</a>
+</nav>
+</body>
+</html>
